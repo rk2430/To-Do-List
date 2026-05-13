@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background: #f8ece8;
+}
+
+.container{
+  min-height: 100vh;
+  padding: 40px;
+  background: #f8ece8;
+}
+
+.app{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title{
+  text-align: center;
+  font-size: 55px;
+  color: #4e342e;
+  margin-bottom: 40px;
+  font-family: cursive;
+}
+
+.todo-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card{
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h2{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #5d4037;
+  font-family: cursive;
+}
+
+.input-box{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-box input{
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.input-box button{
+  padding: 10px 15px;
+  border: none;
+  background: #ff9f80;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.input-box button:hover{
+  background: #ff7f50;
+}
+
+.card ul{
+  list-style: none;
+}
+
+.card li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f7f7f7;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.task-text{
+  color: #333;
+}
+
+.delete-btn{
+  border: none;
+  background: crimson;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn:hover{
+  background: darkred;
+}
+
+@media screen and (max-width: 768px){
+
+  .todo-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .title{
+    font-size: 40px;
+  }
+
+}
